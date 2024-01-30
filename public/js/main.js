@@ -1,4 +1,5 @@
 import data from '../../public/json/molengeek.json' assert { type: "json" }
+
 let buttonMG = document.querySelector(".logoMG img")
 buttonMG.src = data.molengeekLogo
 console.log(buttonMG);
@@ -91,5 +92,6 @@ for (const key in dataMg) {
         iconNetwork.img = dataMg[key].logo
         i+=1
     }
-
 }
+
+//Formations courtes : 

@@ -28,8 +28,7 @@ header{
     margin:0;
 }
 
-.contact{
-    border:2px solid black
+.contactMail{
 }
 
 .listNav li{
@@ -51,8 +50,9 @@ header{
 
 .bar:hover{
     text-transform: uppercase;
-    border-bottom: 1px solid white;
-    color: white;
+    border-bottom: 1px solid rgb(67, 104, 80);
+    color: rgb(67, 104, 80);
+    font-size: 15px;
 }
 
 
@@ -64,7 +64,9 @@ nav{
     padding:10px;
     width:100%;
     height:80px;
-    background-color:rgb(242, 220, 150);
+    background-color: rgb(246, 236, 191);
+    /* background-color: rgb(195, 173, 229); */
+    /* background-color:rgb(255, 235, 153) */
     /* font-size: calc(0.5rem + 1.5 vw); */
 }
 
@@ -239,7 +241,7 @@ nav li {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../src/image/imageworkers.webp);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../src/image/imageworkers.webp);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover; 
@@ -255,14 +257,13 @@ nav li {
     margin:0;
     width:100%;
     height: 180px;
-    background: #00000068;
     z-index: 1; 
     opacity: 1;
     color:white
 }
 
 h2{
-    font-size: 60px;
+    font-size: 80px;
 }
 
 /* //Mobile L */
@@ -299,11 +300,16 @@ h2{
     justify-content: center;
     padding: 30px;
     font-family: 'Poppins', sans-serif;
-    background-color: rgba(204, 213, 174);
+    background-color: rgb(173, 188, 159)
+    ;
+    /* background-color: rgb(229, 212, 255); */
+    /* background-color: rgb(202, 173, 222); */
+    /* background-color: rgb(251, 248, 204); */
+    /* background-color: rgba(204, 213, 174); */
 }
 
 .textWhatIs{
-    width: 45%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -314,9 +320,18 @@ h2{
 }
 
 .paragrapheWhat{
-    background-color: rgb(107, 112, 92);
+    background-color:rgb(249, 249, 249);
     border-radius: 20px;
-    padding: 10px;
+    color:rgb(99, 136, 137);
+    font-weight: bolder !important;
+    padding: 15px;
+    line-height: 30px;
+    height: 270px;
+    width:70%;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .formationsTrio{
@@ -344,7 +359,9 @@ h2{
 
 .formation:hover{
     /* background-color: rgb(214, 241, 235); */
-    background-color: rgb(233, 237, 201);   
+    background-color: rgb(251, 250, 218);
+    /* background-color: rgb(243, 234, 249); */
+    /* background-color: rgb(233, 237, 201);    */
     transform: scale(1.02);
 }
 
@@ -542,7 +559,7 @@ h2{
     align-items: center;
     gap:20px;
     /* background-color: rgb(78, 75, 75); */
-    background-color: rgb(250, 237, 205);
+    background-color: rgb(251, 250, 218);
 }
 
 .notetitle{
@@ -552,7 +569,11 @@ h2{
 
 .date{
     width: 50px; 
-    background-color: rgb(254, 250, 224);
+    background-color: rgb(212, 231, 197);
+    border:10px solid rgb(67, 104, 80);
+}
+.date p{
+    color:rgb(18, 55, 42);
 }
 .events h1{
     width: 60%;
@@ -563,7 +584,7 @@ h2{
     background-color: rgba(255, 255, 255, 0.971);
     border-radius: 50px;
     margin:0;
-    box-shadow:  -9px -9px 18px rgb(212, 163, 115),
+    box-shadow:  -9px -9px 18px hsl(127, 6%, 73%),
     9px 9px 18px #fff1f1;
 }
 .contentEvent{
@@ -614,13 +635,6 @@ h2{
     flex-wrap: wrap;
     animation: moving;
 }
-@keyframes moving {
-    0% {nth-child(1)}
-}
-
-/* .bullesInfos:nth-child(1) {
-
-} */
 .contactBtn{
     display: flex;
     justify-content: center;
@@ -908,7 +922,7 @@ h2{
     justify-content: center;
     align-items: center;
     padding:20px;
-    background-color: rgba(251, 233, 162, 0.971);
+    background-color:rgb(67, 104, 80);
 }
 
 .fullContact{
@@ -1010,7 +1024,18 @@ iframe{
     flex-direction: column;
     gap:20px;
 }
-            
+.titreNews{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}       
+.titreNews h2{
+    font-size: 50px;
+    text-align: center;
+}
+
 form{
     width: 60%;
     display: flex;
@@ -1028,7 +1053,7 @@ form{
     gap:25px;
 }
 .top .rsvp{
-    width:50%;
+    width:80%;
 }
 
 .top button{
@@ -1158,7 +1183,7 @@ form{
 
 /* Section 7 : Footer */
 .footer{
-    background-color: rgb(165, 165, 141);
+    background-color: rgb(251, 250, 218);
     width: 100%;
     height: 200px;
 }
@@ -1172,8 +1197,9 @@ form{
 .network{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap:40px;
+    gap:30px;
     flex-wrap: wrap;
     padding:0;
     height: 200px;
@@ -1182,6 +1208,9 @@ form{
 .network img{
     width: 50px;
     height: 50px;
+}
+.allIcon{
+    display: flex;
 }
 .iconFooter{
     display: flex;
@@ -1195,13 +1224,15 @@ form{
     border-radius: 20px;
 }
 
-
-.footer p{
-    font-size: 20px;
+.copyright{
+    font-size: 15px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
+
 /* Mobile L */
 @media (min-width:376px) and (max-width:425px){
     .footer{
@@ -1225,4 +1256,356 @@ form{
 /* Mobile M */
 @media (max-width:375px){
     
+}
+
+/* ------------------------------------ */
+/* FORMATIONS */
+/* Section 1 : Banière */
+.bannerFormation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../src/image/man-using-laptop-coffee-shop.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    width: 100%;
+    height: 650px;
+}
+
+.texteBannerFormation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    width:100%;
+    height: 180px;
+    z-index: 1; 
+    opacity: 1;
+    color:white
+}
+/* ------------------------------------------------------ */
+/* Section 2 : Formations */
+.formationsCetL{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(67, 104, 80) ;
+}
+
+/* ------------------------------------------------------ */
+/* Section 3 : Se former*/
+.seFormer{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoSeFormer{
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.frameVideo{
+    border-radius: 30px;
+}
+.textSeFormer h3{
+    font-size: 20px;
+}
+
+.titleSeFormer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleSeFormer h3{
+    font-size: 25px;
+
+}
+
+.trioImgSeFormer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.trioImgSeFormer img{
+    width: 200px;
+    height: 205px;
+    border:1px solid black;
+    border-radius: 70px;
+}
+.miniImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.miniImg:hover{
+    transform: scale(1.1);
+}
+
+.miniImg img:hover{
+    border:5px solid #9FA3FF;
+
+}
+.miniText{
+    padding-top:10px;
+    margin: 0;
+    font-size: 15px;
+    height: 40px;
+    align-items: center;
+}
+
+/* ------------------------------------------------------ */
+/* Section 4 : Testimonials */
+.testimonial{
+    width: 100%;
+    height: fit-content;
+}
+
+.container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px
+}
+.card{
+    height:370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+    transition: 0.3s;
+    border: 2px solid rgb(18, 55, 42);
+    background-color:rgb(173, 188, 159);
+}
+
+.card:hover{
+    /* background-color: #9FA3FF; */
+    background-color: rgb(18, 55, 42);
+    /* background-color: #9FA3FF;; */
+    transform: scale(1.1);
+    color: white;
+}
+.fullcarte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.imgTestimonial{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.italicText{
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+}
+
+.xpYoutube{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px
+}
+
+.xpYoutube .btn{
+    height: 30px;
+    width: 200px;
+    border:1px solid black
+}
+
+/* Section 5 : FAQ */
+.faq{
+    width: 100%;
+    height: 500px;
+}
+
+/* ----------------------------------- */
+/* CONTACT */
+
+.contactMsg{
+    width: 100%;
+    height: 750px;
+    background-color: rgb(173, 188, 159);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    padding-top:80px;
+}
+
+.titreContact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titreContact h3{
+    font-size: 40px;
+    color:rgb(18, 55, 42);
+    font-weight: bolder;
+}
+
+.formContactMsg{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+}
+            
+.nameEmail{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+.nameEmail .reponse{
+    width:45%;
+}
+
+.subject{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subject .reponse{
+    width: 92%;
+}
+
+.message{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message .reponse{
+    width: 92%;
+    height: 150px;
+}
+.reponse {
+    height:50px;
+    font-size: 15px;
+    padding-left:8px;
+    background: transparent;
+    border: 1px solid white;
+    color:rgb(18, 55, 42);
+    display: flex;
+    justify-content: start;
+}
+
+.reponse:hover{
+    border: 1px solid rgb(173, 188, 159)
+}
+
+.reponse:focus{
+    outline: none
+}
+.sendmessage{
+    border-style: none;
+}
+
+.sendmsg{
+    height: 60px;
+    width: 180px;
+    border-style: none;
+    background-color: rgb(18, 55, 42);
+    border: 2px solid rgb(18, 55, 42);
+    color:white;
+    border-radius: 20px;
+}
+
+
+
+/* A PROPOS */
+.bannerAbout{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(99, 136, 137);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    height: 650px;
+}
+
+.texteBannerAbout{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../src/image/close-up-detail-team-working-o-new-project-coworking-space-writing-ideas-looking-through-graphics-tablet-laptop-teamwork-business-concept.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    width:60%;
+    height: 650px;
+    z-index: 1; 
+    opacity: 1;
+    color:white
+}
+
+.textTopAbout{
+    color: white;
+    width: 40%;
+    text-align: center;
+}
+.textTopAbout h2{
+    font-size: 60px;
+}
+
+.textTopAbout p{
+    font-size: 20px;
+}
+
+/* Section 2 - C'est quoi? */
+.kesako{
+    width: 100%;
+}
+.allKesako{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:80px;
+}
+.texteKesako h2{
+    font-size: 40px;
+}
+.imgKesako{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.imgKesako img{
+    width: 600px;
 }
