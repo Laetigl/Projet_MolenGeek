@@ -50,11 +50,9 @@ header{
 }
 
 .bar:hover{
-    background-color:rgb(215, 210, 201);
     text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 20px;
-    color: rgb(38, 36, 34);
+    border-bottom: 1px solid white;
+    color: white;
 }
 
 
@@ -243,6 +241,7 @@ nav li {
     align-items: center;
     background-image: url(../src/image/imageworkers.webp);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover; 
     width: 100%;
     height: 650px;
@@ -311,8 +310,13 @@ h2{
 
 }
 .textWhatIs{
-    color:white;
-    
+    color:white; 
+}
+
+.paragrapheWhat{
+    background-color: rgb(107, 112, 92);
+    border-radius: 20px;
+    padding: 10px;
 }
 
 .formationsTrio{
@@ -416,6 +420,11 @@ h2{
 @media (min-width:426px) and (max-width:768px){
     .textWhatIs{
         width: 90%;
+        height: fit-content;
+    }
+    .textWhatIs h2{
+        font-size: 30px;
+        text-align: center;
     }
     .formationsTrio{
         width: 90%;
@@ -432,16 +441,19 @@ h2{
 
 /* //Mobile L */
 @media (min-width:376px) and (max-width:425px){
+    .whatIs{
+        height: fit-content;
+    }
     .textWhatIs{
         width: 90%;
-        text-align: center;
+        height: fit-content;
     }
     .textWhatIs h2{
         font-size: 30px;
-        width: 90%;
+        text-align: center;
     }
-    .textWhatIs p{
-        width: 90%;
+    .paragrapheWhat{
+        width: 100%;
     }
     .formationsTrio{
         width: 95%;
@@ -475,21 +487,24 @@ h2{
 /* // Mobile M */
 @media (max-width:375px){
     .whatIs{
-        padding:15px;
+        height: fit-content;
+        padding: 2px;
     }
     .textWhatIs{
         width: 90%;
-        text-align: center;
+        height: fit-content;
     }
     .textWhatIs h2{
         font-size: 30px;
-        width: 90%;
+        text-align: center;
     }
-    .textWhatIs p{
-        width: 90%;
+    .paragrapheWhat{
+        width: 100%;
+        font-size: 15px;
     }
     .formationsTrio{
         width: 100%;
+        padding: 10px;
     }
     .formation{
         width: 95%;
@@ -520,18 +535,24 @@ h2{
 /* Section 3 : Evenements */
 .events{
     width: 100%;
-    height: 400px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap:20px;
     /* background-color: rgb(78, 75, 75); */
-    background-color: rgb(212, 163, 115);
+    background-color: rgb(250, 237, 205);
 }
+
 .notetitle{
     width: 50px;
     padding-right: 10px;
+}
+
+.date{
+    width: 50px; 
+    background-color: rgb(254, 250, 224);
 }
 .events h1{
     width: 60%;
@@ -542,14 +563,64 @@ h2{
     background-color: rgba(255, 255, 255, 0.971);
     border-radius: 50px;
     margin:0;
+    box-shadow:  -9px -9px 18px rgb(212, 163, 115),
+    9px 9px 18px #fff1f1;
 }
 .contentEvent{
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap:100px;
+    width:100%;
+    height: 300px;
 }
+
+.date{
+    width: 160px;
+    height: 160px;
+    border:1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow:  11px 11px 22px #8b7e7e,
+             -11px -11px 22px #5e5f5c6e;
+}
+
+.date p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    font-size: 25px;
+}
+
+.up{
+    margin-bottom: 100px;
+}
+
+.down{
+    margin-top: 100px;
+}
+.bullesInfos{
+    width: 90%;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    flex-wrap: wrap;
+    animation: moving;
+}
+@keyframes moving {
+    0% {nth-child(1)}
+}
+
+/* .bullesInfos:nth-child(1) {
+
+} */
 .contactBtn{
     display: flex;
     justify-content: center;
@@ -557,9 +628,10 @@ h2{
 }
 .contactBtn button{
     border-style: none;
+    background-color: white;
+    height: 80px;
+    width: 200px;
     border-radius: 20px;
-    border: 5px dotted white;
-    background-color: rgba(232, 215, 149, 0.971);
 }
 .contentEvent .button{
     width: 200px;
@@ -575,72 +647,157 @@ h2{
 
 /* Laptop */
 @media (min-width:769px) and (max-width:1024px){
+    .events{
+        height:700px;
+    }
     .events h1{
         width: 80%;
     }
+    .contentEvent{
+        gap:0px;
+        height:350px;
+        display: flex;
+        flex-direction: column;
+    }
+    .bullesInfos{
+        width: 70%;
+    }
+    .date{
+        width: 100px;
+        height: 100px;
+    }
+    .date p{        
+        font-size: 15px;
+        width:90px;
+        margin:0;
+    }
+    
 }
 
 /* Tablette */
 @media (min-width:426px) and (max-width:768px){
     .events{
-        gap: 50px
+        height:700px;
     }
     .events h1{
-        width: 80%;
-        height:70px;
-        font-size: 30px;
+        width: 70%;
+        text-align: center;
+        font-size: 25px;
+    }
+    .notetitle{
+        margin-left: 20px;
     }
     .contentEvent{
-        width: 90%;
-        gap:20px
+        gap:20px;
+        height:450px;
+        display: flex;
+        flex-direction: column;
     }
-    .contactBtn{
+    .bullesInfos{
         width: 90%;
+        height: fit-content;
     }
-
+    .date{
+        width: 150px;
+        height: 150px;
+    }
+    .date p{        
+        font-size: 15px;
+        width:150px;
+        margin:0;
+    }
+    .up{
+        margin-bottom: 0px;
+    }
+    .down{
+        margin-top: 0px;
+    }
 }
 
 /* Mobile L */
 @media (min-width:376px) and (max-width:425px){
     .events{
-        gap: 50px
+        width: 100%;
+        height:780px;
     }
     .events h1{
-        width: 70%;
-        height:70px;
-        font-size: 20px;
+        width: 80%;
         text-align: center;
+        font-size: 25px;
+    }
+    .notetitle{
+        margin-left: 20px;
     }
     .contentEvent{
-        width: 90%;
-        gap:20px
+        gap:20px;
+        height:600px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
-    .contactBtn{
+    .bullesInfos{
         width: 90%;
+        gap:10px;
+        height: fit-content;
+    }
+    .date{
+        width: 140px;
+        height: 140px;
+    }
+    .date p{        
+        font-size: 20px;
+        width:140px;
+        margin:0;
+    }
+    .up{
+        margin-bottom: 0px;
+    }
+    .down{
+        margin-top: 0px;
     }
 }
 
 /* Mobile M */
 @media (max-width:375px){
     .events{
-        gap: 50px
+        width: 100%;
+        height:780px;
     }
     .events h1{
-        width: 70%;
-        height:70px;
-        font-size: 20px;
+        width: 80%;
+        height: 80px;
         text-align: center;
-        padding:10px;
+        font-size: 20px;
+    }
+    .notetitle{
+        margin-left: 20px;
     }
     .contentEvent{
-        width: 90%;
-        gap:20px
+        gap:20px;
+        height:550px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
-    .contactBtn{
+    .bullesInfos{
         width: 90%;
+        gap:30px;
+        height: fit-content;
     }
-    .agendaEvents{
-        width: 300px;
+    .date{
+        width: 120px;
+        height: 120px;
+    }
+    .date p{        
+        font-size: 15px;
+        width:120px;
+        margin:0;
+    }
+    .up{
+        margin-bottom: 0px;
+    }
+    .down{
+        margin-top: 0px;
     }
 }
 
@@ -722,50 +879,26 @@ h2{
     right:1rem;
 }
 
-/* .textCarousel{
-    width: 50%;
-}
-.carouselPartners{
-    width: 100%;
-    height:400px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap:10px;
-    position:relative;
+/* Mobile L */
+@media (min-width:376px) and (max-width:425px){
+    .partners{
+        height: 300px;
+    }
+    .carousel{
+        width: 100%;
+        height: 200px;
+    }
 }
 
-.carouselPartners button{
-    position: absolute;
-    background: none;
-    border: none;
-    outline:none;
-    z-index: 2;
-    width: 30px;
-    padding: 0;
-    cursor: pointer;
-    color:rgb(0, 0, 0);
-    transform: translateY(-50%);
-    top:50%;
+/* Mobile M */
+@media (max-width:375px){
+    .partners{
+        height: 300px;
+    }
+    .carousel{
+        width: 100%;
+    }
 }
-.listePartners{
-    width: 100%;
-    padding-left:0;
-    opacity: 0;
-}
-
-.active{
-    opacity: 1;
-}
-
-#previous {
-    left:5px
-}
-
-#next{
-    right:5px;
-} */ 
 
 /* -------------------------------------- */
 /* Section 5 : Contact */
@@ -807,7 +940,56 @@ h2{
             
 iframe{
     height:350px;
+    border-radius: 20px;
+
 }
+/* Tablette */
+@media (min-width:426px) and (max-width:768px){
+    .fullContact{
+        flex-wrap: wrap;
+    }
+    .textContact{
+        height: 300px;
+    }
+}
+
+/* Mobile L */
+@media (min-width:376px) and (max-width:425px){
+    .fullContact{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .textContact{
+        height: 300px;
+    }
+    .titleContact{
+        padding: 10px;
+    }
+    .googleMap{
+        width:90%;
+    }
+}
+
+/* Mobile M */
+@media (max-width:375px){
+    .fullContact{
+        flex-wrap: wrap;
+    }
+    .textContact{
+        height: 300px;
+    }
+    .titleContact{
+        padding: 10px;
+    }
+    .contactMap{
+        padding: 0;
+        height: 700px;
+    }
+    .googleMap{
+        width:100%;
+    }
+}
+
 
 /* ----------------------------------------- */
 /* Section 6 : Newsletters */
@@ -847,7 +1029,6 @@ form{
 }
 .top .rsvp{
     width:50%;
-
 }
 
 .top button{
@@ -855,23 +1036,10 @@ form{
     background-color: white;
     position: relative;
 }
-/* .middle{
-    width: 90%;
-    display: flex;
-    gap:20px;
-}
-.middle .rsvp{
-    width:100%;
-}
 
-.bottom{
-    width: 90%;
-    display: flex;
-    gap:20px;
-} */
 .rsvp {
     height:40px;
-    font-size: 12px;
+    font-size: 15px;
     padding-left:8px;
     background: transparent;
     border: 1px solid #664e26;
@@ -879,13 +1047,6 @@ form{
     display: flex;
     justify-content: flex-start;
 }
-
-/* .bottom .rsvp{
-    text-align: start;
-    height:100px;
-    width:100%;
-} */
-
 
 .rsvp:hover{
     border: 1px solid #cda45d
@@ -901,15 +1062,109 @@ form{
     width: 60px;
 }
 
+/* Laptop */
+@media (min-width:769px) and (max-width:1024px){
+    .titreNews{
+        text-align: center;
+    }
+    .top .rsvp{
+        width:90%;
+        height: 60px;
+        font-size: 15px;
+    }
+}
+
+/* Tablette */
+@media (min-width:426px) and (max-width:768px){
+    .titreNews h2{
+        text-align: center;
+        font-size: 35px;
+    }
+    form{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .top{
+        width:80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .top .rsvp{
+        width:100%;
+        height: 50px;
+        font-size: 15px;
+    }
+}
+
+/* Mobile L */
+@media (min-width:376px) and (max-width:425px){
+    .newsletters{
+        height: 300px;
+        padding: 10px;
+    }
+    .titreNews h2{
+        text-align: center;
+        font-size: 25px;
+    }
+    form{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .top{
+        width:80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .top .rsvp{
+        width:100%;
+        height: 50px;
+        font-size: 15px;
+    }
+}
+
+/* Mobile M */
+@media (max-width:375px){
+    .newsletters{
+        height: 300px;
+    }
+    .titreNews h2{
+        text-align: center;
+        font-size: 25px;
+    }
+    form{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .top{
+        width:80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .top .rsvp{
+        width:100%;
+        height: 50px;
+        font-size: 15px;
+    }
+}
+
 /* Section 7 : Footer */
 .footer{
     background-color: rgb(165, 165, 141);
     width: 100%;
-    height: 400px;
+    height: 200px;
 }
 
 .reseaux{
-    color:white;
+    color:black;
     font-size: 60px;
     width: 50%;
 }
@@ -917,31 +1172,57 @@ form{
 .network{
     display: flex;
     justify-content: center;
-    gap:10px;
+    align-items: center;
+    gap:40px;
     flex-wrap: wrap;
     padding:0;
+    height: 200px;
 }
 
-.soloReseau{
-    display: flex;
-    gap:20px;
-    height:200px;
-    border-radius: 20px;
-
+.network img{
+    width: 50px;
+    height: 50px;
 }
-
-.soloReseau:hover{
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-    opacity:1;
-    pointer-events: auto ;
-}
-
-.card-body{
-    padding: 2px;
-    height: 70px;
+.iconFooter{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Playfair Display', serif;
+    width: 70px;
+    height: 70px;
+}
+.iconFooter:hover{
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+.footer p{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Mobile L */
+@media (min-width:376px) and (max-width:425px){
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 250px;
+    }
+    .network{
+        flex-wrap: wrap;
+        display: flex;
+        width: 60%;
+        gap:10px;
+    }
+    .iconFooter{
+        width: 100px;
+    }
+}
+
+/* Mobile M */
+@media (max-width:375px){
+    
 }

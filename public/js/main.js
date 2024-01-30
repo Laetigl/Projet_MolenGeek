@@ -75,7 +75,6 @@ let btnNews = document.querySelector(".top button")
 console.log(btnNews);
 let rsvpNews = document.querySelector(".top .rsvp")
 let msgAlert = document.querySelector(".msgInput")
-
 btnNews.addEventListener('click',()=>{
     if (rsvpNews.value == "") {
         msgAlert.style.display="block"
@@ -83,3 +82,14 @@ btnNews.addEventListener('click',()=>{
 })
 
 //Reseaux sociaux
+let iconNetwork = document.querySelector(".network")
+let dataMg = data.reseauxSociaux
+let i = 0
+for (const key in dataMg) {
+    if (Object.hasOwnProperty.call(dataMg, key)) {
+        iconNetwork.children[i].href = dataMg[key].lien
+        iconNetwork.img = dataMg[key].logo
+        i+=1
+    }
+
+}
