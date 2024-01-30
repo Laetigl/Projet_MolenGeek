@@ -1,0 +1,36 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+//* Création de Spacer 
+$spacer : 15px
+//*Valeur ci-dessous qu'on peut modifier qui va servir de multiplicateur pour les espacements
+
+$spacers : map-merge($spacers, (
+    0 : 0px ,
+    1 : $spacer*1 ,
+    2 : $spacer*2 ,
+    3 : $spacer*3 ,
+    4 : $spacer*4 ,
+    5 : $spacer*5 ,
+    6 : $spacer*6 ,
+    7 : $spacer*7 ,
+    8 : $spacer*8 ,
+    9 : $spacer*9 ,
+    10: $spacer*10,
+    11: $spacer*11,
+    12: $spacer*12,
+    13: $spacer*13,
+    14: $spacer*14,
+    20: $spacer*20,
+));
+
+//*Choisir les couleurs de notre choix (via colorpicker) et mettre ici pour s'y référer dans le code
+$couleur-perso : (
+    "orange": rgb(207, 130, 22),
+    "orangeResume": rgb(189,93,56),
+    "darkgrey": #212529,
+    "lightgrey": #dee1e6,
+    
+)
+
+$theme-colors : map-merge($theme-colors , $couleur-perso)
