@@ -30,7 +30,7 @@ translateIcon.addEventListener('click', () =>{
 //Partners
 let buttons = document.querySelectorAll("[data-carousel-button]")
 console.log(buttons);
-let liste = document.querySelector('.listeCarousel')
+let liste
 console.log(liste);
 
 let myImg
@@ -41,11 +41,12 @@ Object.values(data.partenaires).forEach(element => {
     myLi.setAttribute("class","slide")
     myLi.appendChild(myImg)
     myImg.src = element.logo
+    let liste = document.querySelector('.listeCarousel')
     liste.appendChild(myLi)
     })
 
 buttons.forEach(button => {
-    button.addEventListener('click', ()=>{
+    button.addEventListener("click", ()=>{
         let offset = button.dataset.carouselButton === "next" ? 1 : -1
         let slides = button
             .closest("[data-carousel]")
@@ -83,15 +84,14 @@ btnNews.addEventListener('click',()=>{
 })
 
 //Reseaux sociaux
-let iconNetwork = document.querySelector(".network")
+let iconNetwork = document.querySelector(".allIcon")
 let dataMg = data.reseauxSociaux
 let i = 0
 for (const key in dataMg) {
     if (Object.hasOwnProperty.call(dataMg, key)) {
-        iconNetwork.children[i].href = dataMg[key].lien
+        console.log(iconNetwork.children[i].firstElementChild);
+        iconNetwork.children[i].firstElementChild.href = dataMg[key].lien
         iconNetwork.img = dataMg[key].logo
         i+=1
     }
 }
-
-//Formations courtes : 
