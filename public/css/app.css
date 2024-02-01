@@ -2796,6 +2796,7 @@ span{
     gap:20px;
     border-radius: 20px;
     transition:all .3s ease;
+    box-shadow: 2px 2px 2px 2px black;
 }
 .day:hover{
     transform: scale(1.1);
