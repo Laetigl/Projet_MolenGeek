@@ -1,4 +1,10 @@
 @import url(./../../node_modules/bootstrap/dist/css/bootstrap.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,200&family=Playfair+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,200&family=Playfair+Display&family=Poppins:wght@200&display=swap');
+
+
 body{
     width: 100vw;
     margin:0;
