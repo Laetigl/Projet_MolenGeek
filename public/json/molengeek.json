@@ -358,35 +358,51 @@
     "jobs": [
         {
             "poste": "Talent Strategist",
-            "description": "Nous recherchons actuellement des passionnés du onboarding pour rejoindre notre équipe dynamique de stratèges talentueux."
+            "description": "Nous recherchons actuellement des passionnés du onboarding pour rejoindre notre équipe dynamique de stratèges talentueux.",
+            "image":"../src/image/accessboy.png"
         },
         {
             "poste": "Gestionnaire de bâtiment et des services généraux",
-            "description": "Le gestionnaire de bâtiment et des services généraux est responsable de veiller au bon fonctionnement et à la maintenance du bâtiment."
+            "description": "Le gestionnaire de bâtiment et des services généraux est responsable de veiller au bon fonctionnement et à la maintenance du bâtiment.",
+            "image":"../src/image/accessboy.png"
+
+            
         },
         {
             "poste": "Monteur Vidéo",
-            "description": "En tant que Monteur Vidéo chez Molengeek, vous serez le maître de la mise en scène visuelle, contribuant à façonner le récit de Molengeek à travers des contenus vidéo percutants."
+            "description": "En tant que Monteur Vidéo chez Molengeek, vous serez le maître de la mise en scène visuelle, contribuant à façonner le récit de Molengeek à travers des contenus vidéo percutants.",
+            "image":"../src/image/accessboy.png"
+
         },
         {
             "poste": "Ressources Humaines",
-            "description": "Responsable des Ressources Humaines chez MolenGeek – Jouez un rôle clé dans une aventure unique au cœur d’un écosystème technologique qui innove sans cesse !"
+            "description": "Responsable des Ressources Humaines chez MolenGeek – Jouez un rôle clé dans une aventure unique au cœur d’un écosystème technologique qui innove sans cesse !",
+            "image":"../src/image/accessboy.png"
+
         },
         {
             "poste": "Designer",
-            "description": "En tant que Designer chez Molengeek, vous incarnerez la créativité visuelle au cœur de notre écosystème technologique et entrepreneurial."
+            "description": "En tant que Designer chez Molengeek, vous incarnerez la créativité visuelle au cœur de notre écosystème technologique et entrepreneurial.",
+            "image":"../src/image/accessboy.png"
+
         },
         {
             "poste": "Project Manager",
-            "description": "En tant que Project Manager chez Molengeek, vous serez le chef d’orchestre des initiatives et des projets au sein de notre écosystème dynamique axé sur la technologie et l’entrepreneuriat."
+            "description": "En tant que Project Manager chez Molengeek, vous serez le chef d’orchestre des initiatives et des projets au sein de notre écosystème dynamique axé sur la technologie et l’entrepreneuriat.",
+            "image":"../src/image/accessboy.png"
+
         },
         {
             "poste": "Assistant de Production",
-            "description": "En tant qu’Assistant de Production pour des tournages chez MolenGeek, vous jouerez un rôle essentiel dans la réalisation fluide et réussie de projets visuels."
+            "description": "En tant qu’Assistant de Production pour des tournages chez MolenGeek, vous jouerez un rôle essentiel dans la réalisation fluide et réussie de projets visuels.",
+            "image":"../src/image/accessboy.png"
+
         },
         {
             "poste": "Business Analyst Junior",
-            "description": "Envie de rejoindre notre équipe dynamique et innovante ? Embarquez pour une aventure exceptionnelle au sein d’un écosystème technologique vibrant, où chaque jour est une opportunité de redéfinir les règles du jeu !"
+            "description": "Envie de rejoindre notre équipe dynamique et innovante ? Embarquez pour une aventure exceptionnelle au sein d’un écosystème technologique vibrant, où chaque jour est une opportunité de redéfinir les règles du jeu !",
+            "image":"../src/image/accessboy.png"
+
         }
     ],
     "molengeekLogo": "https://molengeek.com/wp-content/uploads/2022/02/MG_LOGO_V3x50-1.png"

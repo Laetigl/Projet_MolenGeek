@@ -3,6 +3,21 @@ let buttonMG = document.querySelector(".logoMG img")
 buttonMG.src = data.molengeekLogo
 console.log(buttonMG);
 
+//Menu Burger:
+let iconMenu = document.getElementById("icon")
+let navbar = document.querySelector("nav")
+let links = document.querySelectorAll("nav li")
+
+iconMenu.addEventListener('click', () =>{
+    navbar.classList.toggle("active")
+})
+
+links.forEach(element => {
+    element.addEventListener('click', ()=>{
+        navbar.classList.remove('active')
+    })
+})
+
 //Reseaux sociaux
 let iconNetwork = document.querySelector(".allIcon")
 let dataMg = data.reseauxSociaux
@@ -29,7 +44,6 @@ for (const infosgenerales of Object.entries(dataFormationsLongues)) {
     arrayFormationsLongues.push(conditionsInfos) //push le nom des grosses section dans array
     console.log(arrayFormationsLongues);
 }
- 
 
 let focusSpanCourte = document.querySelector(".focusCourtes")
 let focusSpanLongue = document.querySelector(".focusLongues")

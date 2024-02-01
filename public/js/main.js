@@ -27,7 +27,6 @@ translateIcon.addEventListener('click', () =>{
     dropdown.classList.toggle("langages")
 })
 
-//Partners
 let buttons = document.querySelectorAll("[data-carousel-button]")
 console.log(buttons);
 let liste
